@@ -5,7 +5,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '/' },
   { name: 'Projects', href: '#' },
   { name: 'Contact', href: '#' },
   { name: 'Resume', href: '#' },
@@ -49,7 +49,7 @@ export default function Example() {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="/assets/Profile(1).png"
+                  src="/assets/Profile (1).png"
                   className="h-8 w-auto"
                 />
               </a>

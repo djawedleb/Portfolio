@@ -1,4 +1,6 @@
-import {
+
+  import 'tailwindcss/tailwind.css';
+  import {
     Card,
     CardBody,
     Image,
@@ -13,100 +15,85 @@ import {
   import pr1 from "../assets/pr1.webp";
   import pr2 from "../assets/pr2.png";
   import commerce from "../assets/commerce.webp";
-
+  import { FaEye, FaCode } from 'react-icons/fa';
   
   export default function Example() {
     return (
-      <div className="bg-white py-24 sm:py-1">
+      <div id='project' className="bg-[#E0F7FA] py-24"> {/* Light blue background */}
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              My Recent Projects
-            </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              Here are a few projects I've worked on recently
+          <div  className="py-12 border-t border-gray-300">
+            <h2 className="text-3xl font-bold text-center">My Projects</h2>
+            <p className="mt-2 text-lg text-center text-gray-600">
+              Here are some of my projects that showcase my skills and creativity.
             </p>
           </div>
-          {/* Container to keep cards in the same row */}
-          <div className="mx-auto mt-10 flex flex-wrap justify-between gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none">
-              <Card  maxW="sm" className="flex-grow">
-                <CardBody>
-                  <Image
-                    src={pr1}
-                    alt="Green double couch with wooden legs"
-                    borderRadius="lg"
-                  />
-                  <Stack mt="6" spacing="3">
-                    <Heading size="md">Social Media Website Clone</Heading>
-                    <Text>
-                      This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces, and for people who love chic design with a sprinkle of vintage.
-                    </Text>
-                  </Stack>
-                </CardBody>
-                <Divider />
-                <CardFooter>
-                  <ButtonGroup spacing="2">
-                    <Button variant="solid" colorScheme="blue">
-                      Preview
-                    </Button>
-                    <Button variant="ghost" colorScheme="blue">
-                      Source code
-                    </Button>
-                  </ButtonGroup>
-                </CardFooter>
-              </Card>
-              <Card  maxW="sm" className="flex-grow">
-                <CardBody>
-                  <Image
-                    src={pr2}
-                    alt="Green double couch with wooden legs"
-                    borderRadius="lg"
-                  />
-                  <Stack mt="6" spacing="3">
-                    <Heading size="md">Car Renting Website</Heading>
-                    <Text>
-                      This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces, and for people who love chic design with a sprinkle of vintage.
-                    </Text>
-                  </Stack>
-                </CardBody>
-                <Divider />
-                <CardFooter>
-                  <ButtonGroup spacing="2">
-                    <Button variant="solid" colorScheme="blue">
-                      Preview
-                    </Button>
-                    <Button variant="ghost" colorScheme="blue">
-                      Source code
-                    </Button>
-                  </ButtonGroup>
-                </CardFooter>
-              </Card>
-              <Card  maxW="sm" className="flex-grow">
-                <CardBody>
-                  <Image
-                    src={commerce}
-                    alt="Green double couch with wooden legs"
-                    borderRadius="lg"
-                  />
-                  <Stack mt="6" spacing="3">
-                    <Heading size="md">E-commerce Website</Heading>
-                    <Text>
-                      This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces, and for people who love chic design with a sprinkle of vintage.
-                    </Text>
-                  </Stack>
-                </CardBody>
-                <Divider />
-                <CardFooter>
-                  <ButtonGroup spacing="2">
-                    <Button variant="solid" colorScheme="blue">
-                      Preview
-                    </Button>
-                    <Button variant="ghost" colorScheme="blue">
-                      Source Code
-                    </Button>
-                  </ButtonGroup>
-                </CardFooter>
-              </Card>
+          <div className="mt-20 flex flex-wrap justify-center gap-8"> {/* Change grid to flex */}
+            <Card maxW='sm' className="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+              <CardBody>
+                <Image src={pr1} alt='Project Image' borderRadius='lg' />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='md'>Job Finder</Heading>
+                  <Text color='gray.600'>
+                    A platform that connects job seekers with potential employers. Users can create profiles, upload resumes, and search for job opportunities.
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaEye />}>
+                    <a href="https://your-live-project-url.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  </Button>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
+                    <a href="https://github.com/your-github-repo" target="_blank" rel="noopener noreferrer">Code</a>
+                  </Button>
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+            <Card maxW='sm' className="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+              <CardBody>
+                <Image src={pr2} alt='Project Image' borderRadius='lg' />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='md'>Portfolio</Heading>
+                  <Text color='gray.600'>
+                    A personal portfolio to showcase my projects and skills. Built with React and Tailwind CSS for a responsive design.
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaEye />}>
+                    <a href="https://your-live-project-url.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  </Button>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
+                    <a href="https://github.com/your-github-repo" target="_blank" rel="noopener noreferrer">Code</a>
+                  </Button>
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+            <Card maxW='sm' className="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+              <CardBody>
+                <Image src={commerce} alt='Project Image' borderRadius='lg' />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='md'>E-commerce Store</Heading>
+                  <Text color='gray.600'>
+                    A full-stack e-commerce application that allows users to browse products, add items to their cart, and securely checkout.
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaEye />}>
+                    <a href="https://your-live-project-url.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  </Button>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
+                    <a href="https://github.com/your-github-repo" target="_blank" rel="noopener noreferrer">Code</a>
+                  </Button>
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </div>

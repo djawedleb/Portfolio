@@ -3,12 +3,13 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Profile1 from "../assets/Profile1.png" ;
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Projects', href: '#' },
-  { name: 'Contact', href: '#' },
-  { name: 'Resume', href: '#' },
+  { name: 'Projects', href: '/' },
+  { name: 'Contact', href: '/' },
+  { name: 'Resume', href: '/resume.pdf' },
 ]
 
 export default function Example() {
@@ -49,7 +50,7 @@ export default function Example() {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="/assets/Profile (1).png"
+                  src={Profile1}
                   className="h-8 w-auto"
                 />
               </a>
@@ -115,6 +116,7 @@ export default function Example() {
               >
                 Hire me!
               </a>
+              <a href="/resume.pdf" class="text-sm font-semibold leading-6 text-gray-900">About Me<span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Profile1 from "../assets/Profile1.png";
+import illustration from "../assets/illustration.png"; // Import your illustration
 
 import { FaHome, FaProjectDiagram, FaEnvelope, FaFilePdf, FaHandshake } from 'react-icons/fa';
 
@@ -95,7 +96,7 @@ export default function Example() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-20 pt-14 ">
         <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
           <div
             style={{
@@ -105,28 +106,37 @@ export default function Example() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#81D4FA] to-[#0288D1] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-left max-w-2xl py-32 sm:py-48 lg:py-58">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-start"></div>
-          <div className="text-left">
-            <h1  className="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Hi, I'm Lebaili Djouad, Software Developer
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              I am a software engineering student passionate about web and mobile development. I enjoy creating innovative and user-friendly applications and am eager to contribute to impactful projects in the tech industry.
-            </p>
-            <div className="mt-10 flex items-center justify-start gap-x-6">
-              <a
-                href="#contact"
-                className="rounded-md bg-[#0288D1] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0277BD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0288D1] flex items-center gap-2"
-              >
-                <FaHandshake className="text-lg" /> {/* Hire me icon */}
-                Hire me!
-              </a>
-              
-              <a href="/resume.pdf" className="text-sm font-semibold leading-6 text-gray-900 flex items-center gap-2">
-                About Me
-                <span aria-hidden="true">→</span>
-              </a>
+        <div className="  py-32 sm:py-48 lg:py-58 relative">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+            {/* Left side: Text */}
+            <div className="lg:w-1/2 text-left">
+              <h1 className="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Hi, I'm Lebaili Djouad Software Developer
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                I am a software engineering student passionate about web and mobile development. I enjoy creating innovative and user-friendly applications and am eager to contribute to impactful projects in the tech industry.
+              </p>
+              <div className="mt-10 flex items-center justify-start gap-x-6">
+                <a
+                  href="#contact"
+                  className="rounded-md bg-[#0288D1] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0277BD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0288D1] flex items-center gap-2"
+                >
+                  <FaHandshake className="text-lg" /> {/* Hire me icon */}
+                  Hire me!
+                </a>
+                <a href="/resume.pdf" className="text-sm font-semibold leading-6 text-gray-900 flex items-center gap-2">
+                  About Me
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+            {/* Right side: Illustration */}
+            <div className="absolute right-0  lg:w-1/2 lg:h-auto hidden lg:block">
+              <img
+                src={illustration} // Your illustration image
+                alt="illustration"
+                className="max-w-full h-auto"
+              />
             </div>
           </div>
         </div>
@@ -136,10 +146,9 @@ export default function Example() {
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#81D4FA] to-[#0288D1] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#81D4FA] to-[#0288D1] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        
       </div>
     </div>
   )

@@ -6,10 +6,11 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Profile1 from "../assets/Profile1.png";
 import illustration from "../assets/illustration.png"; // Import your illustration
 
-import { FaHome, FaProjectDiagram, FaEnvelope, FaFilePdf, FaHandshake } from 'react-icons/fa';
+import { FaHome, FaProjectDiagram, FaLaptopCode, FaEnvelope, FaFilePdf, FaHandshake } from 'react-icons/fa';
 
 const navigation = [
   { name: 'Home', href: '#home', icon: <FaHome /> },
+  { name: 'Skills', href: '#skills', icon: <FaLaptopCode /> },
   { name: 'Projects', href: '#project', icon: <FaProjectDiagram /> },
   { name: 'Contact', href: '#contact', icon: <FaEnvelope /> },
   { name: 'Resume', href: '/resume.pdf', icon: <FaFilePdf /> },

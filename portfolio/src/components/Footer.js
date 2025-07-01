@@ -9,7 +9,7 @@ export default function Component() {
   let year = date.getFullYear();
   
   return (
-    <FlowbiteFooter container className="bg-[#E0F7FA] ">
+      <FlowbiteFooter container className="bg-[#E0F7FA] ">
       <div className="w-full">
       <FlowbiteFooter.Divider className="bg-gray-800 h-1 " />
         <div className="w-full sm:flex sm:items-center sm:justify-between py-2">

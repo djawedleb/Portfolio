@@ -12,9 +12,9 @@
     ButtonGroup,
     Button,
   } from '@chakra-ui/react';
-  import pr1 from "../assets/pr1.webp";
-  import pr2 from "../assets/pr2.png";
-  import commerce from "../assets/commerce.webp";
+  import eventify from "../assets/eventify.png";
+  import Resto from "../assets/Resto.png.png";
+  import Cover from "../assets/Cover.jpg";
   import { FaEye, FaCode } from 'react-icons/fa';
   
   export default function Example() {
@@ -30,11 +30,11 @@
           <div className="mt-20 flex flex-wrap justify-center gap-8"> {/* Change grid to flex */}
             <Card maxW='sm' className="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
               <CardBody>
-                <Image src={pr1} alt='Project Image' borderRadius='lg' />
+                <Image src={eventify} alt='Project Image' borderRadius='lg' />
                 <Stack mt='6' spacing='3'>
-                  <Heading size='md'>Job Finder</Heading>
+                  <Heading size='md'>Eventify</Heading>
                   <Text color='gray.600'>
-                    A platform that connects job seekers with potential employers. Users can create profiles, upload resumes, and search for job opportunities.
+                  A full-stack web application for managing event registrations, built with the MERN stack (MongoDB, Express.js, React.js, Node.js).
                   </Text>
                 </Stack>
               </CardBody>
@@ -42,21 +42,21 @@
               <CardFooter>
                 <ButtonGroup spacing='2'>
                   <Button variant='ghost' colorScheme='blue' leftIcon={<FaEye />}>
-                    <a href="https://your-live-project-url.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a href="https://event-registration-system-five.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                   </Button>
                   <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
-                    <a href="https://github.com/your-github-repo" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a href="https://github.com/djawedleb/Event-Registration-System" target="_blank" rel="noopener noreferrer">Code</a>
                   </Button>
                 </ButtonGroup>
               </CardFooter>
             </Card>
             <Card maxW='sm' className="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
               <CardBody>
-                <Image src={pr2} alt='Project Image' borderRadius='lg' />
+                <Image src={Resto} alt='Project Image' borderRadius='lg' />
                 <Stack mt='6' spacing='3'>
-                  <Heading size='md'>Portfolio</Heading>
+                  <Heading size='md'>Resto</Heading>
                   <Text color='gray.600'>
-                    A personal portfolio to showcase my projects and skills. Built with React and Tailwind CSS for a responsive design.
+                  A full-stack web application for managing restaurant operations, including orders, reservations, tables, and food inventory. Built with React (frontend) and Node.js/Express/MongoDB (backend).
                   </Text>
                 </Stack>
               </CardBody>
@@ -64,21 +64,21 @@
               <CardFooter>
                 <ButtonGroup spacing='2'>
                   <Button variant='ghost' colorScheme='blue' leftIcon={<FaEye />}>
-                    <a href="https://your-live-project-url.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a href="https://restaurant-management-blue-chi.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
                   </Button>
                   <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
-                    <a href="https://github.com/your-github-repo" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a href="https://github.com/djawedleb/Restaurant-management" target="_blank" rel="noopener noreferrer">Code</a>
                   </Button>
                 </ButtonGroup>
               </CardFooter>
             </Card>
             <Card maxW='sm' className="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
               <CardBody>
-                <Image src={commerce} alt='Project Image' borderRadius='lg' />
+                <Image src={Cover} alt='Project Image' borderRadius='lg' />
                 <Stack mt='6' spacing='3'>
-                  <Heading size='md'>E-commerce Store</Heading>
+                  <Heading size='md'>SmartAgri</Heading>
                   <Text color='gray.600'>
-                    A full-stack e-commerce application that allows users to browse products, add items to their cart, and securely checkout.
+                  A comprehensive IoT-based smart agriculture system that enables real-time monitoring and control of agricultural parameters using modern technology.
                   </Text>
                 </Stack>
               </CardBody>
@@ -86,10 +86,10 @@
               <CardFooter>
                 <ButtonGroup spacing='2'>
                   <Button variant='ghost' colorScheme='blue' leftIcon={<FaEye />}>
-                    <a href="https://your-live-project-url.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    Live Demo
                   </Button>
                   <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
-                    <a href="https://github.com/your-github-repo" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a href="https://github.com/djawedleb/SmartAgri" target="_blank" rel="noopener noreferrer">Code</a>
                   </Button>
                 </ButtonGroup>
               </CardFooter>

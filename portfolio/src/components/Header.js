@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Profile1 from "../assets/Profile1.png";
 import illustration from "../assets/illustration.png"; // Import your illustration
 
 import { FaHome, FaProjectDiagram, FaLaptopCode, FaEnvelope, FaFilePdf, FaHandshake } from 'react-icons/fa';
@@ -65,7 +64,6 @@ export default function Example() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#E0F7FA] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               
-                <img alt="" src={Profile1} className="h-8 w-auto" />
               
               <button
                 type="button"

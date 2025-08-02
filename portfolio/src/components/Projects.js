@@ -15,7 +15,7 @@
   import eventify from "../assets/eventify.png";
   import Resto from "../assets/Resto.png.png";
   import Cover from "../assets/Cover.jpg";
-  import IntelliChat from "../assets/IntelliChat.png";
+  import IntelliChat from "../assets/Intellichat.png.png";
   import { FaEye, FaCode } from 'react-icons/fa';
   
   export default function Example() {

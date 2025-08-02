@@ -15,6 +15,7 @@
   import eventify from "../assets/eventify.png";
   import Resto from "../assets/Resto.png.png";
   import Cover from "../assets/Cover.jpg";
+  import IntelliChat from "../assets/IntelliChat.png";
   import { FaEye, FaCode } from 'react-icons/fa';
   
   export default function Example() {
@@ -90,6 +91,28 @@
                   </Button>
                   <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
                     <a href="https://github.com/djawedleb/SmartAgri" target="_blank" rel="noopener noreferrer">Code</a>
+                  </Button>
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+            <Card maxW='sm' className="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+              <CardBody>
+                <Image src={IntelliChat} alt='Project Image' borderRadius='lg' />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='md'>IntelliChat</Heading>
+                  <Text color='gray.600'>
+                  A modern, responsive AI chat application built with React, Node.js, and Ai api. Features real-time chat, image analysis, user authentication, and a beautiful dark-themed interface.
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaEye />}>
+                    <a href="https://intellichat-ruddy.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  </Button>
+                  <Button variant='ghost' colorScheme='blue' leftIcon={<FaCode />}>
+                    <a href="https://github.com/djawedleb/IntelliChat" target="_blank" rel="noopener noreferrer">Code</a>
                   </Button>
                 </ButtonGroup>
               </CardFooter>
